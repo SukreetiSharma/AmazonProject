@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="17.12">
+    <testcase classname="Add multiple products to wishlist, select one product from wishlist and add it to cart." name="Add Product to Cart and verify total amount" time="16.772">
+        <failure message="invalid selector: Unable to locate an element with the xpath expression //img[@class='imgSwatch'']; because of the following error:&#10;SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//img[@class='imgSwatch''];' is not a valid XPath expression.&#10;  (Session info: chrome=106.0.5249.119)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#invalid_selector_exception&#10;Build info: version: '4.1.0', revision: '87802e897b'&#10;System info: host: 'MSDT124', ip: '10.20.20.153', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2.1'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [d71b90edc7b42c56675e92bb01102397, findElement {using=xpath, value=//img[@class='imgSwatch''];}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\SUKREE~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:54612}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54612/devtoo..., se:cdpVersion: 106.0.5249.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: d71b90edc7b42c56675e92bb01102397" type="org.openqa.selenium.InvalidSelectorException"><![CDATA[Given Go to the Website.....................................................passed
+When Navigate to search section and search for mobiles(any).................passed
+And Select the specific mobile, capture the Name(full) of the product as displayed on UI..passed
+And Check for the Size Name and colors available and print the same on console..failed
+And Navigate to Customer questions & answers and list top 3 questions and answers..skipped
+And Add the item to the cart, put assertion on the product added to cart....skipped
+And Navigate to Shopping Cart button, increase the order Quantity to 4......skipped
+Then Verify the item quantity inside the cart and list the total amount for the order..skipped
+
+StackTrace:
+org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression //img[@class='imgSwatch'']; because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//img[@class='imgSwatch''];' is not a valid XPath expression.
+  (Session info: chrome=106.0.5249.119)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#invalid_selector_exception
+Build info: version: '4.1.0', revision: '87802e897b'
+System info: host: 'MSDT124', ip: '10.20.20.153', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d71b90edc7b42c56675e92bb01102397, findElement {using=xpath, value=//img[@class='imgSwatch''];}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\SUKREE~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:54612}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54612/devtoo..., se:cdpVersion: 106.0.5249.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d71b90edc7b42c56675e92bb01102397
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+	at Pages.AbleToAddItem.PrintSizeAndColour(AbleToAddItem.java:71)
+	at StepDefinition.AddItemAndVerifyAmount.check_for_the_size_name_and_colors_available_and_print_the_same_on_console(AddItemAndVerifyAmount.java:23)
+	at ✽.Check for the Size Name and colors available and print the same on console.(file:///C:/Users/SukreetiSharma/Documents/GitHub/Amazon_Project/src/test/java/FeatureFile/AddItemToCart.feature:7)
+]]></failure>
+    </testcase>
+</testsuite>

@@ -9,8 +9,7 @@ public enum AddItemEnums {
     QUESTION("5v3fge-m2aifc-49rfbq-uws09q"),
     ADDTOCART("submit.add-to-cart"),
     VERIFY("Added to Cart"),
-    SHOPPINGCART("a-button a-button-base attach-button-large attach-cart-button"),
-    QUANTITY("class='a-button-text a-declarative");
+    SHOPPINGCART("a-button a-button-base attach-button-large attach-cart-button");
     private String name;
     private AddItemEnums(String name) {
         this.name = name;

@@ -1,13 +1,10 @@
 package Pages;
 
 import Enums.AddItemEnums;
-import com.google.common.base.Verify;
 import net.jodah.failsafe.internal.util.Assert;
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import java.io.FileInputStream;
@@ -34,7 +31,6 @@ public class AbleToAddItem {
     By Value = By.xpath("//li[@aria-labelledby='quantity_4']");
     By verifyQuantity = By.xpath("//span[@class='a-dropdown-prompt']");
     By SubTotal = By.xpath("(//div[@data-name='Subtotals'])[1]");
-    By MouseHovercolour = By.xpath("//img[@class='imgSwatch''];");
 
     public AbleToAddItem(WebDriver driver) {
         this.driver = driver;
@@ -68,9 +64,6 @@ public class AbleToAddItem {
         for (WebElement e : myElements) {
             System.out.println(e.getText());
         }
-        WebElement elem = driver.findElement(MouseHovercolour);
-        Actions action = new Actions(driver);
-        action.moveToElement(elem).perform();
         List<WebElement> Elements = driver.findElements(By.xpath(String.format(Colour, AddItemEnums.MOBILECOLOUR.getResourcesName())));
         System.out.println("Available Mobile colour:");
         for (WebElement ele : Elements) {

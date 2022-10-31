@@ -56,11 +56,10 @@ public class AddItemAndVerifyAmount extends BaseClass {
         }
         driver.findElement(By.xpath(String.format(Search, AddItemEnums.SEARCH.getResourcesName()))).sendKeys(data.get(0).get(0));
         driver.findElement(By.xpath(String.format(Search, AddItemEnums.SEARCHBUTTON.getResourcesName()))).click();
-
     }
 
-    @Given("Select the specific mobile, print name , size , colour and Top {int} question and answer")
-    public void select_the_specific_mobile_print_name_size_colour_and_top_question_and_answer(DataTable Value) {
+    @Given("Select the specific mobile, print name , size , colour and Top three question and answer")
+    public void select_the_specific_mobile_print_name_size_colour_and_top_question_and_answer() {
         List<WebElement> myElements = driver.findElements(Mobile);
         System.out.println("Mobile Name :");
         for (WebElement e : myElements) {
@@ -104,7 +103,7 @@ public class AddItemAndVerifyAmount extends BaseClass {
         String actual = driver.findElement(verify).getText();
         Assert.isTrue(actual.equals(prop.getProperty("AddToCart")), "Expected result does not match with actual result");
     }
-    @When("Navigate to Shopping Cart button, increase the order Quantity to {int}.")
+    @When("Navigate to Shopping Cart button, increase the order Quantity to Four.")
     public void navigate_to_shopping_cart_button_increase_the_order_quantity_to(Integer int1) {
         wait.until(ExpectedConditions.visibilityOfElementLocated(ShoppingCart));
         driver.findElement(ShoppingCart).click();

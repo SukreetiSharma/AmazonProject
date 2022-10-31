@@ -1,14 +1,25 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="43.612">
-    <testcase classname="Add multiple products to wishlist, select one product from wishlist and add it to cart." name="Add Product to Cart and verify total amount" time="43.279">
-        <system-out><![CDATA[Given Go to the Website.....................................................passed
-When Navigate to search section and search for mobiles(any).................passed
-And Select the specific mobile, capture the Name(full) of the product as displayed on UI..passed
-And Check for the Size Name and colors available and print the same on console..passed
-And Navigate to Customer questions & answers and list top 3 questions and answers..passed
-And Add the item to the cart, put assertion on the product added to cart....passed
-And Navigate to Shopping Cart button, increase the order Quantity to 4......passed
-Then Verify the item quantity inside the cart and list the total amount for the order..passed
-]]></system-out>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="16.906">
+    <testcase classname="Select one product and add it to cart then increase quantity." name="Add Product to Cart and verify total amount." time="16.518">
+        <failure message="Unable to find element with locator By.xpath: //p[@class='a-text-left a-size-base']&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: '4.1.0', revision: '87802e897b'&#10;System info: host: 'MSDT124', ip: '10.20.20.153', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2.1'&#10;Driver info: driver.version: RemoteWebDriver" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given Go to the Website.....................................................passed
+And Navigate to search section and search for mobiles(any)..................passed
+And Select the specific mobile, print name , size , colour and Top three question and answer.failed
+And Add the item to the cart, put assertion on the product added to cart....skipped
+When Navigate to Shopping Cart button, increase the order Quantity to Four..skipped
+Then Verify the item quantity inside the cart and list the total amount for the order..skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: Unable to find element with locator By.xpath: //p[@class='a-text-left a-size-base']
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.0', revision: '87802e897b'
+System info: host: 'MSDT124', ip: '10.20.20.153', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2.1'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+	at StepDefinition.AddItemAndVerifyAmount.select_the_specific_mobile_print_name_size_colour_and_top_question_and_answer(AddItemAndVerifyAmount.java:71)
+	at ✽.Select the specific mobile, print name , size , colour and Top three question and answer(file:///C:/Users/SukreetiSharma/Documents/GitHub/Amazon_Project/src/test/java/FeatureFile/AddItemToCart.feature:7)
+]]></failure>
     </testcase>
 </testsuite>

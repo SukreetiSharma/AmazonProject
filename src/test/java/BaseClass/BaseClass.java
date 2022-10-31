@@ -15,6 +15,7 @@ public class BaseClass {
         driver.get("https://www.amazon.in/");
         pageFactory = new PageFactory(driver);
     }
+
     public static void browserClose(){
         driver.quit();
     }

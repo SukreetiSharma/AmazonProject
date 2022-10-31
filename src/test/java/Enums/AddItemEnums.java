@@ -5,7 +5,7 @@ public enum AddItemEnums {
     SEARCHBUTTON("nav-search-submit-button"),
     MOBILECOLOUR("selection"),
     MOBILE("Redmi 9A Sport"),
-    MoBILESIZE("a-text-left a-size-base"),
+    MOBILESIZE("a-text-left a-size-base"),
     QUESTION("5v3fge-m2aifc-49rfbq-uws09q"),
     ADDTOCART("submit.add-to-cart"),
     VERIFY("Added to Cart"),

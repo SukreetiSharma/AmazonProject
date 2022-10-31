@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="30.645">
-    <testcase classname="Add multiple products to wishlist, select one product from wishlist and add it to cart." name="Add Product to Cart and verify total amount" time="29.737">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="43.612">
+    <testcase classname="Add multiple products to wishlist, select one product from wishlist and add it to cart." name="Add Product to Cart and verify total amount" time="43.279">
         <system-out><![CDATA[Given Go to the Website.....................................................passed
 When Navigate to search section and search for mobiles(any).................passed
 And Select the specific mobile, capture the Name(full) of the product as displayed on UI..passed

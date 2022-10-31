@@ -18,7 +18,7 @@ public class AddItemAndVerifyAmount extends BaseClass {
 
     @When("Select the specific mobile, capture the Name\\(full) of the product as displayed on UI.")
     public void select_the_specific_mobile_capture_the_name_full_of_the_product_as_displayed_on_ui() {
-        pageFactory.getaddItem().PrintMobileName();
+        pageFactory.getaddItem().ClickOnMobile();
     }
 
     @When("Check for the Size Name and colors available and print the same on console.")
